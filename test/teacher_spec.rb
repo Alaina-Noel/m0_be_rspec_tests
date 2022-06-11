@@ -5,14 +5,14 @@ require './lib/teacher'
 
 describe Teacher do
   it 'is an instance of teacher' do
-    teacher = Teacher.new('Sydney')
+    teacher = Teacher.new('Sydney', 27)
     expect(teacher).to be_a Teacher
   end
   #Lines 6-10 are testing if an object created from the teacher
   #class is indeed a teacher.
 
   it 'has a name' do
-    teacher = Teacher.new('Sydney')
+    teacher = Teacher.new('Sydney', 27)
     expect(teacher.name).to eq 'Sydney'
   end
   #Lines 14-17 are testing if an object created from the Teacher class is given
@@ -20,16 +20,16 @@ describe Teacher do
 
 
   it 'has an age' do
-    teacher = Teacher.new('Sydney')
+    teacher = Teacher.new('Sydney', 27)
     expect(teacher.age).to eq 27
   end
 
 #Lines 22-25 are testing if an object created from the Teacher class
 #is given the age  27 that it obtains that age.
 
-  it 'has can get older' do
-    teacher = Teacher.new('Sydney')
-    teacher.get_older
+  it 'can get older' do
+    teacher = Teacher.new('Sydney', 27)
+    teacher.gets_older
     expect(teacher.age).to eq 28
   end
   #Lines 30-34 are testing if we obtain an object created from the Teacher
