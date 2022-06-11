@@ -6,5 +6,8 @@ class Teacher
      @age = age
  end
 
- def 
+ def gets_older
+     @age += 1
+ end
+
 end
